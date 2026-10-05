@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumbre y Laurel · Restaurante en Logroño</title>
+<meta name="description" content="Casa de comidas en el casco antiguo de Logroño. Cocinamos a la brasa de sarmiento verdura de la ribera del Ebro, pescado de lonja y carne riojana. Carta…">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Lumbre y Laurel">
+<meta property="og:title" content="Lumbre y Laurel: Brasa lenta y huerta de aquí.">
+<meta property="og:description" content="Casa de comidas en el casco antiguo de Logroño. Cocinamos a la brasa de sarmiento verdura de la ribera del Ebro, pescado de lonja y carne riojana. Carta…">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#17130F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%23A63D25%22/%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20font-family%3D%22Georgia%2Cserif%22%20font-size%3D%2238%22%20text-anchor%3D%22middle%22%20fill%3D%22%23FFFFFF%22%3EL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=Karla:wght@400;500;700&amp;display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Lumbre y Laurel", "description": "Casa de comidas en el casco antiguo de Logroño. Cocinamos a la brasa de sarmiento verdura de la ribera del Ebro, pescado de lonja y carne riojana. Carta corta, vinos de pequeños productores y sobremesa sin reloj.", "telephone": "+34941550187", "address": {"@type": "PostalAddress", "streetAddress": "Calle San Juan, 14", "addressLocality": "Logroño", "postalCode": "26001", "addressCountry": "ES"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday"], "opens": "13:30", "closes": "16:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "13:30", "closes": "16:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "20:30", "closes": "23:30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "13:30", "closes": "16:30"}], "email": "reservas@lumbreylaurel.example"}</script>
+<script>document.documentElement.className='js'</script>
+<style>
+:root{
+--fondo:#17130F;
+--superficie:#221C16;
+--tinta:#F3EADB;
+--tinta-suave:#BDB19F;
+--linea:#3A3530;
+--primario:#A63D25;
+--sobre-primario:#FFFFFF;
+--acento:#E2B45C;
+--sobre-acento:#14110F;
+--acento-texto:#E2B45C;
+--acento-titulo:#E2B45C;
+--arte-acento:#E2B45C;
+--f-titulo:'DM Serif Display', 'Playfair Display', Georgia, serif;
+--f-texto:'Karla', system-ui, -apple-system, 'Segoe UI', sans-serif;
+--peso:400;
+--track:-0.01em;
+--caja:none;
+--lh:1.04;
+--escala:1.04;
+--em:italic;
+--r:0.5rem;
+--r-boton:0.35rem;
+--r-arte:999px 999px 0.5rem 0.5rem;
+--wa:#25D366;--wa-tinta:#06301A;
+--aire:clamp(4.5rem,11vw,8.5rem);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:5.5rem}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:400 1.0625rem/1.62 var(--f-texto);overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}
+p{margin:0}
+ul{list-style:none;margin:0;padding:0}
+h1,h2,h3,h4{margin:0;font-family:var(--f-titulo);font-weight:var(--peso);letter-spacing:var(--track);text-transform:var(--caja);line-height:var(--lh);text-wrap:balance}
+:focus-visible{outline:3px solid var(--acento-texto);outline-offset:3px;border-radius:2px}
+.ancho{width:min(100% - 2.5rem,76rem);margin-inline:auto}
+.oculto{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.salto{position:absolute;left:1rem;top:-4rem;z-index:50;background:var(--tinta);color:var(--fondo);padding:.7rem 1rem;border-radius:.4rem}
+.salto:focus{top:1rem}
+.ico{flex:none}
+
+/* Franja de demostración */
+.demo{background:var(--tinta);color:var(--fondo);font-size:.8125rem;line-height:1.4;text-align:center;text-wrap:balance;padding:.55rem 1.25rem}
+
+/* Cabecera */
+.cab{position:sticky;top:0;z-index:30;background:var(--fondo);border-bottom:1px solid var(--linea)}
+.cab__in{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:4.25rem;position:relative}
+.marca{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;font-family:var(--f-titulo);font-weight:var(--peso);letter-spacing:var(--track);text-transform:var(--caja);font-size:calc(1.3rem*var(--escala));line-height:1.05;min-width:0}
+.marca__ico{display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:var(--r-boton);background:var(--primario);color:var(--sobre-primario);flex:none}
+.menu-btn{display:none;align-items:center;gap:.5rem;min-height:2.75rem;padding:.4rem .95rem;border:1.5px solid var(--tinta);border-radius:var(--r-boton);background:none;color:inherit;font:600 .95rem var(--f-texto);cursor:pointer}
+.js .menu-btn{display:inline-flex}
+.menu-btn i{width:1rem;height:.6rem;border-block:1.5px solid currentColor}
+.nav ul{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;padding-block:.5rem}
+.nav a{display:inline-block;padding:.55rem 0;text-decoration:none;font-weight:500;font-size:.98rem}
+.nav a:hover{text-decoration:underline}
+.cab .cab__tel{display:none}
+@media (max-width:59.99rem){
+  html:not(.js) .cab__in{flex-wrap:wrap}
+  .js .nav{display:none;position:absolute;inset:100% -1.25rem auto;background:var(--fondo);border-bottom:1px solid var(--linea);padding:.5rem 1.25rem 1.25rem;box-shadow:0 1.5rem 2rem -1.5rem rgb(0 0 0/.35)}
+  .js .nav.abierto{display:block}
+  .js .nav ul{flex-direction:column;gap:0}
+  .js .nav a{display:block;padding:.9rem 0;font-size:1.15rem;border-bottom:1px solid var(--linea)}
+}
+@media (min-width:60rem){
+  .js .menu-btn{display:none}
+  .cab__in{min-height:4.75rem}
+  .nav{margin-left:auto}
+  .nav ul{gap:2rem}
+  .cab .cab__tel{display:inline-flex}
+}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:3.3rem;padding:.8rem 1.5rem;border:1.5px solid transparent;border-radius:var(--r-boton);font:600 1rem/1.2 var(--f-texto);text-decoration:none;text-align:center;cursor:pointer}
+.btn--primario{background:var(--primario);color:var(--sobre-primario)}
+.btn--linea{border-color:currentColor}
+.btn--inverso{background:var(--sobre-primario);color:var(--primario)}
+.btn--mini{min-height:2.75rem;padding:.5rem 1.1rem;font-size:.95rem}
+.btn:hover{filter:brightness(1.12)}
+.btn--linea:hover{filter:none;background:var(--tinta);color:var(--fondo);border-color:var(--tinta)}
+
+/* Rótulos y títulos de sección */
+.ceja{display:flex;align-items:center;gap:.75rem;font:600 .8rem/1.3 var(--f-texto);letter-spacing:.14em;text-transform:uppercase;color:var(--acento-texto);margin-bottom:1.25rem}
+.ceja::before{content:"";width:2rem;height:1.5px;background:currentColor;flex:none}
+.sec{padding-block:var(--aire)}
+.sec h2{font-size:calc(clamp(2rem,1.25rem + 3.2vw,3.4rem)*var(--escala))}
+.entrada{color:var(--tinta-suave);font-size:1.125rem;max-width:34rem;margin-top:1.25rem}
+
+/* Portada */
+.hero{padding-block:clamp(2.5rem,6vw,5rem) clamp(3rem,6vw,5rem);overflow:hidden}
+.hero__in{display:grid;gap:2.75rem}
+.hero h1{font-size:calc(clamp(2.55rem,1.15rem + 6.2vw,5.6rem)*var(--escala))}
+.hero h1 em,.sec h2 em{font-style:var(--em);color:var(--acento-titulo)}
+.hero__desc{font-size:clamp(1.1rem,1rem + .4vw,1.3rem);line-height:1.55;color:var(--tinta-suave);max-width:36rem;margin-top:1.5rem}
+.hero__cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.estado{display:inline-flex;align-items:baseline;flex-wrap:wrap;gap:.1rem .5rem;margin-top:1.5rem;font-size:.98rem;color:var(--tinta-suave)}
+.estado[hidden]{display:none}
+.estado::before{content:"";width:.6rem;height:.6rem;border-radius:50%;background:#C0483C;align-self:center;flex:none}
+.estado.abierto::before{background:#2FA862;box-shadow:0 0 0 .25rem rgb(47 168 98/.22)}
+.estado b{color:var(--tinta);font-weight:600}
+.arte{position:relative;aspect-ratio:5/4;max-width:34rem;width:100%;justify-self:center}
+.arte__panel{position:absolute;inset:0;border-radius:var(--r-arte);background:var(--primario);overflow:hidden}
+.arte__panel svg,.arte__panel img{width:100%;height:100%;object-fit:cover}
+.arte .l{fill:none;stroke:var(--sobre-primario)}
+.arte .c{fill:none;stroke:var(--arte-acento)}
+.arte .fl{fill:var(--sobre-primario)}
+.arte .fc{fill:var(--arte-acento)}
+.arte .pr{fill:var(--primario)}
+.arte__sello{position:absolute;left:-.5rem;bottom:1.5rem;display:grid;place-items:center;width:4.5rem;height:4.5rem;border-radius:50%;background:var(--acento);color:var(--sobre-acento);border:.4rem solid var(--fondo);box-sizing:content-box}
+@media (max-width:29.99rem){.hero__cta .btn{flex:1 1 100%}}
+@media (min-width:60rem){
+  .hero__in{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(2.5rem,5vw,5.5rem);align-items:center}
+  .arte{aspect-ratio:4/5;max-height:min(68vh,38rem);justify-self:end}
+  .arte__sello{width:5.5rem;height:5.5rem;left:-2.4rem;bottom:3rem}
+}
+
+/* Datos rápidos */
+.datos{border-block:1px solid var(--linea)}
+.datos ul{display:grid}
+.datos li{display:flex;gap:.9rem;align-items:flex-start;padding:1.15rem 0;border-top:1px solid var(--linea)}
+.datos li:first-child{border-top:0}
+.datos .ico{margin-top:.2rem;color:var(--acento-texto)}
+.datos small{display:block;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta-suave);font-weight:600}
+.datos span,.datos a{font-weight:500}
+@media (min-width:48rem){
+  .datos ul{grid-template-columns:1.3fr 1fr 1fr}
+  .datos li{border-top:0;padding:1.5rem 1.75rem;border-left:1px solid var(--linea)}
+  .datos li:first-child{border-left:0;padding-left:0}
+}
+
+/* Servicios */
+.serv__cab{margin-bottom:clamp(2.5rem,5vw,4rem)}
+.cat{font:600 .82rem/1.3 var(--f-texto);letter-spacing:.14em;text-transform:uppercase;color:var(--tinta-suave);margin:2.75rem 0 .25rem}
+.cat:first-child{margin-top:0}
+.cat+.tarjetas{margin-top:1rem}
+.fila{padding:1.2rem 0;border-bottom:1px solid var(--linea)}
+.fila__cab{display:flex;align-items:baseline;gap:.75rem}
+.fila__nombre{font-size:calc(1.35rem*var(--escala));line-height:1.15;text-wrap:wrap}
+.fila__puntos{flex:1 1 1rem;min-width:1rem;border-bottom:1.5px dotted var(--tinta-suave);opacity:.55;transform:translateY(-.25em)}
+.precio{font-family:var(--f-titulo);font-weight:var(--peso);letter-spacing:var(--track);font-size:calc(1.25rem*var(--escala));white-space:nowrap;color:var(--acento-texto)}
+.fila p{color:var(--tinta-suave);margin-top:.35rem;max-width:34rem}
+.tarjetas{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,18rem),1fr))}
+.tarjeta{display:flex;flex-direction:column;background:var(--superficie);border-radius:var(--r);padding:1.75rem}
+.tarjeta__n{font:600 .8rem var(--f-texto);letter-spacing:.14em;color:var(--acento-texto)}
+.tarjeta h3,.tarjeta h4{font-size:calc(1.45rem*var(--escala));line-height:1.12;margin:2.25rem 0 .6rem}
+.tarjeta p{color:var(--tinta-suave)}
+.tarjeta .precio{margin-top:auto;padding-top:1.5rem;color:var(--tinta)}
+.nota{color:var(--tinta-suave);font-size:.95rem;margin-top:1.75rem}
+.nb{white-space:nowrap}
+@media (min-width:40rem){.tarjetas{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:64rem){.tarjetas{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:60rem){
+  .serv--lista .serv__in{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(3rem,7vw,7rem);align-items:start}
+  .serv--lista .serv__cab{position:sticky;top:7.5rem;margin:0}
+}
+
+/* Por qué nosotros */
+.porque{background:var(--superficie)}
+.porque ol{list-style:none;margin:clamp(2.5rem,5vw,4rem) 0 0;padding:0;display:grid;gap:2.5rem;counter-reset:n}
+.porque li{counter-increment:n;border-top:1.5px solid var(--tinta);padding-top:1.25rem}
+.porque li::before{content:"0" counter(n);display:block;font-family:var(--f-titulo);font-weight:var(--peso);font-size:calc(1.15rem*var(--escala));color:var(--acento-texto);margin-bottom:1.75rem}
+.porque h3{font-size:calc(1.6rem*var(--escala));line-height:1.1;margin-bottom:.75rem}
+.porque li p{color:var(--tinta-suave)}
+.porque .solo{font-family:var(--f-titulo);font-weight:var(--peso);letter-spacing:var(--track);font-size:calc(1.45rem*var(--escala));line-height:1.2;color:var(--tinta)}
+@media (min-width:48rem){.porque ol{grid-template-columns:repeat(3,1fr);gap:2.5rem}}
+
+/* Galería */
+.galeria ul{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-top:clamp(2.5rem,5vw,4rem)}
+.galeria img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);background:var(--superficie)}
+@media (min-width:48rem){.galeria ul{grid-template-columns:repeat(3,1fr);gap:1rem}}
+
+/* Horario y ubicación */
+.banda{background:var(--primario);color:var(--sobre-primario)}
+.banda :focus-visible{outline-color:var(--sobre-primario)}
+.banda .ceja{color:inherit;opacity:.85}
+.banda__in{display:grid;gap:4.5rem}
+.banda .estado{color:inherit;margin:1.25rem 0 0}
+.banda .estado b{color:inherit}
+.banda .estado::before{box-shadow:0 0 0 2px var(--sobre-primario)}
+.horas{width:100%;border-collapse:collapse;margin-top:2rem;font-size:1.05rem}
+.horas th,.horas td{padding:1rem .75rem;border-top:1px solid color-mix(in srgb,var(--sobre-primario) 26%,transparent);text-align:left;vertical-align:baseline;font-weight:400}
+.horas tr:last-child>*{border-bottom:1px solid color-mix(in srgb,var(--sobre-primario) 26%,transparent)}
+.horas td{text-align:right;font-variant-numeric:tabular-nums}
+.horas .hoy>*{background:color-mix(in srgb,var(--sobre-primario) 13%,transparent);font-weight:600}
+.horas .etq{display:none;margin-left:.6rem;padding:.12rem .5rem;border-radius:999px;background:var(--sobre-primario);color:var(--primario);font:700 .68rem/1.5 var(--f-texto);letter-spacing:.1em;text-transform:uppercase;vertical-align:.12em}
+.horas .hoy .etq{display:inline-block}
+.dir{font-family:var(--f-titulo);font-weight:var(--peso);letter-spacing:var(--track);text-transform:var(--caja);font-size:calc(clamp(1.6rem,1.2rem + 1.6vw,2.3rem)*var(--escala));line-height:1.12;font-style:normal;margin-top:2rem}
+.dir span{display:block;font:400 1.05rem/1.5 var(--f-texto);letter-spacing:0;text-transform:none;opacity:.85;margin-top:.75rem}
+.ubi .btn{margin-top:2rem}
+@media (min-width:60rem){.banda__in{grid-template-columns:1.1fr .9fr;gap:clamp(4rem,9vw,9rem)}}
+
+/* Contacto */
+.contacto{text-align:center}
+.contacto .ceja{justify-content:center}
+.contacto .ceja::after{content:"";width:2rem;height:1.5px;background:currentColor}
+.contacto h2{font-size:calc(clamp(2.4rem,1.2rem + 5.2vw,4.75rem)*var(--escala));max-width:16ch;margin-inline:auto}
+.contacto .entrada{margin-inline:auto}
+.contacto .hero__cta{justify-content:center;margin-top:2.5rem}
+.contacto__mail{margin-top:1.75rem;color:var(--tinta-suave)}
+.contacto__mail a{display:inline-block;color:var(--tinta);font-weight:500}
+
+/* Pie */
+.pie{background:var(--superficie);padding-block:3.5rem 6.5rem;font-size:.98rem;color:var(--tinta-suave)}
+.pie__in{display:grid;gap:2rem}
+.pie .marca{color:var(--tinta)}
+.pie a{color:var(--tinta)}
+.pie__legal{border-top:1px solid var(--linea);padding-top:1.5rem;font-size:.875rem}
+.pie__legal p+p{margin-top:.5rem}
+@media (min-width:48rem){.pie__in{grid-template-columns:1.2fr 1fr 1fr}.pie__legal{grid-column:1/-1}}
+@media (min-width:60rem){.pie{padding-bottom:3.5rem}}
+
+/* WhatsApp flotante (solo móvil) */
+.wa{position:fixed;right:max(1rem,env(safe-area-inset-right));bottom:max(1rem,env(safe-area-inset-bottom));z-index:40;display:inline-flex;align-items:center;gap:.5rem;min-height:3.25rem;padding:.7rem 1.15rem .7rem .95rem;border-radius:999px;background:var(--wa);color:var(--wa-tinta);font:700 .98rem/1 var(--f-texto);text-decoration:none;box-shadow:0 .5rem 1.5rem rgb(0 0 0/.28)}
+.wa:focus-visible{outline-color:var(--tinta);outline-offset:3px}
+@media (min-width:60rem){.wa{display:none}}
+
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+  .btn,.nav a{transition:filter .15s,background-color .15s,color .15s}
+  .hero__txt>*{animation:sube .7s cubic-bezier(.2,.7,.2,1) both}
+  .hero__txt>:nth-child(2){animation-delay:.06s}
+  .hero__txt>:nth-child(3){animation-delay:.12s}
+  .hero__txt>:nth-child(4){animation-delay:.18s}
+  .arte{animation:sube .9s .1s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes sube{from{opacity:0;transform:translateY(1rem)}}
+}
+@media print{.demo,.wa,.menu-btn,.cab__tel{display:none}.cab{position:static}}
+</style>
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+<p class="demo" role="note">Propuesta de diseño para Lumbre y Laurel. No es su web oficial.</p>
+<header class="cab">
+  <div class="ancho cab__in">
+    <a class="marca" href="#inicio" aria-label="Lumbre y Laurel, ir al inicio"><span class="marca__ico"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v6a2.5 2.5 0 0 0 5 0V3M8.5 3v18"/><path d="M17.5 21V3c-2.3 1.6-3.3 4.6-3.3 8.6h3.3"/></svg></span><span>Lumbre y Laurel</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav"><i aria-hidden="true"></i>Menú</button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <ul><li><a href="#servicios">La carta</a></li><li><a href="#horario">Horario</a></li><li><a href="#ubicacion">Dónde estamos</a></li><li><a href="#contacto">Contacto</a></li></ul>
+    </nav>
+    <a class="btn btn--linea btn--mini cab__tel" href="tel:+34941550187"><svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4h3.5l1.7 4.3-2.1 1.5a12 12 0 0 0 6.1 6.1l1.5-2.1L20 15.5V19a1.5 1.5 0 0 1-1.6 1.5C10.6 20 4 13.4 3.5 5.6A1.5 1.5 0 0 1 5 4Z"/></svg><span class="oculto">Llamar al </span>941 55 01 87</a>
+  </div>
+</header>
+
+<main id="contenido">
+  <section class="hero" id="inicio" aria-labelledby="t-inicio">
+    <div class="ancho hero__in">
+      <div class="hero__txt">
+        <p class="ceja">Restaurante en Logroño</p>
+        <h1 id="t-inicio">Brasa lenta y <em>huerta de aquí</em>.</h1>
+        <p class="hero__desc">Casa de comidas en el casco antiguo de Logroño. Cocinamos a la brasa de sarmiento verdura de la ribera del Ebro, pescado de lonja y carne riojana. Carta corta, vinos de pequeños productores y sobremesa sin reloj.</p>
+        <div>
+          <div class="hero__cta">
+            <a class="btn btn--primario" href="https://wa.me/34644550187?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Lumbre%20y%20Laurel." target="_blank" rel="noopener"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20l1.2-4.1A8.3 8.3 0 1 1 8.3 19L4 20Z"/><path d="M9.2 8.3c-.5 3 2.6 6.4 5.9 6.6l1-1.4-1.8-1-.8.7c-1-.4-1.9-1.300-2.300-2.300l.7-.8-1-1.800Z"/></svg>Reservar por WhatsApp<span class="oculto"> (se abre en una pestaña nueva)</span></a>
+            <a class="btn btn--linea" href="tel:+34941550187"><svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4h3.5l1.7 4.3-2.1 1.5a12 12 0 0 0 6.1 6.1l1.5-2.1L20 15.5V19a1.5 1.5 0 0 1-1.6 1.5C10.6 20 4 13.4 3.5 5.6A1.5 1.5 0 0 1 5 4Z"/></svg>Llamar<span class="oculto"> al 941 55 01 87</span></a>
+          </div>
+          <p class="estado" data-estado hidden><b></b><span></span></p>
+        </div>
+      </div>
+      <div class="arte" aria-hidden="true"><div class="arte__panel"><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" focusable="false"><circle class="l" cx="200" cy="400" r="80" opacity="0.75"/><circle class="l" cx="200" cy="400" r="124" opacity="0.67"/><circle class="l" cx="200" cy="400" r="168" opacity="0.59"/><circle class="l" cx="200" cy="400" r="212" opacity="0.51"/><circle class="l" cx="200" cy="400" r="256" opacity="0.43"/><circle class="l" cx="200" cy="400" r="300" opacity="0.35"/><circle class="l" cx="200" cy="400" r="344" opacity="0.27"/><circle class="l" cx="200" cy="400" r="388" opacity="0.19"/><path class="c" stroke-width="3" d="M105.5 383.3L52.3 374.0"/><path class="c" stroke-width="3" d="M109.8 367.2L59.0 348.7"/><path class="c" stroke-width="3" d="M116.9 352.0L70.1 325.0"/><path class="c" stroke-width="3" d="M126.5 338.3L85.1 303.6"/><path class="c" stroke-width="3" d="M138.3 326.5L103.6 285.1"/><path class="c" stroke-width="3" d="M152.0 316.9L125.0 270.1"/><path class="c" stroke-width="3" d="M167.2 309.8L148.7 259.0"/><path class="c" stroke-width="3" d="M183.3 305.5L174.0 252.3"/><path class="c" stroke-width="3" d="M200.0 304.0L200.0 250.0"/><path class="c" stroke-width="3" d="M216.7 305.5L226.0 252.3"/><path class="c" stroke-width="3" d="M232.8 309.8L251.3 259.0"/><path class="c" stroke-width="3" d="M248.0 316.9L275.0 270.1"/><path class="c" stroke-width="3" d="M261.7 326.5L296.4 285.1"/><path class="c" stroke-width="3" d="M273.5 338.3L314.9 303.6"/><path class="c" stroke-width="3" d="M283.1 352.0L329.9 325.0"/><path class="c" stroke-width="3" d="M290.2 367.2L341.0 348.7"/><path class="c" stroke-width="3" d="M294.5 383.3L347.7 374.0"/><circle class="fc" cx="200" cy="400" r="62"/></svg></div><span class="arte__sello" aria-hidden="true"><svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3v6a2.5 2.5 0 0 0 5 0V3M8.5 3v18"/><path d="M17.5 21V3c-2.3 1.6-3.3 4.6-3.3 8.6h3.3"/></svg></span></div>
+    </div>
+  </section>
+
+  <div class="datos">
+    <ul class="ancho">
+      <li><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21c4.200-4.300 6.500-7.700 6.500-10.800a6.500 6.500 0 0 0-13 0C5.500 13.300 7.800 16.700 12 21Z"/><circle cx="12" cy="10.200" r="2.300"/></svg><div><small>Dirección</small><span>Calle San Juan, 14, Logroño</span></div></li>
+      <li><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.500"/><path d="M12 7.500V12l3 2"/></svg><div><small>Horario de hoy</small><span data-hoy><a href="#horario">Ver el horario completo</a></span></div></li>
+      <li><svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4h3.5l1.7 4.3-2.1 1.5a12 12 0 0 0 6.1 6.1l1.5-2.1L20 15.5V19a1.5 1.5 0 0 1-1.6 1.5C10.6 20 4 13.4 3.5 5.6A1.5 1.5 0 0 1 5 4Z"/></svg><div><small>Teléfono</small><a href="tel:+34941550187">941 55 01 87</a></div></li>
+    </ul>
+  </div>
+
+  <section class="sec serv serv--lista" id="servicios" aria-labelledby="t-servicios">
+    <div class="ancho serv__in">
+      <div class="serv__cab">
+        <p class="ceja">La carta</p>
+        <h2 id="t-servicios">La carta</h2>
+        <p class="entrada">Carta corta que cambia con el mercado. Si algo se acaba, es que era del día.</p>
+      </div>
+      <div>
+        <h3 class="cat">Para empezar</h3>
+        <ul class="filas"><li class="fila"><div class="fila__cab"><h4 class="fila__nombre">Pimientos del cristal a la brasa</h4><span class="fila__puntos" aria-hidden="true"></span><span class="precio">12&nbsp;€</span></div><p>Asados enteros, pelados a mano y aliñados con ajo y aceite de arbequina.</p></li><li class="fila"><div class="fila__cab"><h4 class="fila__nombre">Alcachofas confitadas</h4><span class="fila__puntos" aria-hidden="true"></span><span class="precio">14&nbsp;€</span></div><p>Con yema curada y virutas de jamón. Solo en temporada.</p></li><li class="fila"><div class="fila__cab"><h4 class="fila__nombre">Croquetas de chuleta</h4><span class="fila__puntos" aria-hidden="true"></span><span class="precio">11&nbsp;€</span></div><p>Seis unidades, con la carne de la brasa del día anterior.</p></li></ul>
+        <h3 class="cat">De la brasa</h3>
+        <ul class="filas"><li class="fila"><div class="fila__cab"><h4 class="fila__nombre">Chuletillas al sarmiento</h4><span class="fila__puntos" aria-hidden="true"></span><span class="precio">22&nbsp;€</span></div><p>Cordero lechal, sal gorda y nada más. Con patatas a lo pobre.</p></li><li class="fila"><div class="fila__cab"><h4 class="fila__nombre">Merluza de pincho</h4><span class="fila__puntos" aria-hidden="true"></span><span class="precio">24&nbsp;€</span></div><p>Lomo a la brasa con pilpil ligero y pimiento choricero.</p></li><li class="fila"><div class="fila__cab"><h4 class="fila__nombre">Chuletón de vaca vieja</h4><span class="fila__puntos" aria-hidden="true"></span><span class="precio">62&nbsp;€/kg</span></div><p>Madurado 45 días. Para compartir entre dos o tres.</p></li></ul>
+        <h3 class="cat">Para terminar</h3>
+        <ul class="filas"><li class="fila"><div class="fila__cab"><h4 class="fila__nombre">Torrija caramelizada</h4><span class="fila__puntos" aria-hidden="true"></span><span class="precio">7&nbsp;€</span></div><p>Con helado de leche merengada.</p></li><li class="fila"><div class="fila__cab"><h4 class="fila__nombre">Queso camerano</h4><span class="fila__puntos" aria-hidden="true"></span><span class="precio">8&nbsp;€</span></div><p>De cabra, con membrillo casero y nueces.</p></li></ul>
+        <p class="nota">Menú del día de martes a viernes al mediodía: 19 €, con pan, bebida y postre.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec porque" id="porque" aria-labelledby="t-porque">
+    <div class="ancho">
+      <p class="ceja">Por qué nosotros</p>
+      <h2 id="t-porque">Por qué venir</h2>
+      <ol><li><h3>Brasa de sarmiento</h3><p>Encendemos cada servicio con sarmiento de viña. Da un humo dulce que no se consigue con carbón.</p></li><li><h3>Producto con nombre</h3><p>Sabemos de qué huerta viene la verdura y de qué barco el pescado, y te lo contamos en la mesa.</p></li><li><h3>Vinos fuera de ruta</h3><p>Más de cuarenta referencias de bodegas pequeñas de Rioja, muchas de ellas por copas.</p></li></ol>
+    </div>
+  </section>
+
+  <div class="banda sec">
+    <div class="ancho banda__in">
+      <section id="horario" aria-labelledby="t-horario">
+        <p class="ceja">Cuándo venir</p>
+        <h2 id="t-horario">Horario</h2>
+        <p class="estado" data-estado hidden><b></b><span></span></p>
+        <table class="horas">
+          <caption class="oculto">Horario de apertura de Lumbre y Laurel</caption>
+          <tbody><tr data-fila><th scope="row">Martes a jueves<span class="etq">Hoy</span></th><td><span class="nb">13:30–16:00</span></td></tr><tr data-fila><th scope="row">Viernes y sábados<span class="etq">Hoy</span></th><td><span class="nb">13:30–16:00</span> y <span class="nb">20:30–23:30</span></td></tr><tr data-fila><th scope="row">Domingos<span class="etq">Hoy</span></th><td><span class="nb">13:30–16:30</span></td></tr><tr data-fila><th scope="row">Lunes<span class="etq">Hoy</span></th><td><span class="nb">Cerrado</span></td></tr></tbody>
+        </table>
+      </section>
+      <section class="ubi" id="ubicacion" aria-labelledby="t-ubicacion">
+        <p class="ceja">Cómo llegar</p>
+        <h2 id="t-ubicacion">Dónde estamos</h2>
+        <address class="dir">Calle San Juan, 14<span>26001 Logroño</span></address>
+        <a class="btn btn--inverso" href="https://www.google.com/maps/dir/?api=1&amp;destination=Calle%20San%20Juan%2014%2C%2026001%20Logro%C3%B1o" target="_blank" rel="noopener"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21c4.200-4.300 6.500-7.700 6.500-10.800a6.500 6.500 0 0 0-13 0C5.500 13.300 7.800 16.700 12 21Z"/><circle cx="12" cy="10.200" r="2.300"/></svg>Cómo llegar<span class="oculto"> con Google Maps (se abre en una pestaña nueva)</span></a>
+      </section>
+    </div>
+  </div>
+
+  <section class="sec contacto" id="contacto" aria-labelledby="t-contacto">
+    <div class="ancho">
+      <p class="ceja">Contacto</p>
+      <h2 id="t-contacto">¿Reservamos mesa?</h2>
+      <p class="entrada">Dinos día, hora y cuántos sois. Te confirmamos la mesa por WhatsApp.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primario" href="https://wa.me/34644550187?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Lumbre%20y%20Laurel." target="_blank" rel="noopener"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20l1.2-4.1A8.3 8.3 0 1 1 8.3 19L4 20Z"/><path d="M9.2 8.3c-.5 3 2.6 6.4 5.9 6.6l1-1.4-1.8-1-.8.7c-1-.4-1.9-1.300-2.300-2.300l.7-.8-1-1.800Z"/></svg>Reservar por WhatsApp<span class="oculto"> (se abre en una pestaña nueva)</span></a>
+        <a class="btn btn--linea" href="tel:+34941550187"><svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4h3.5l1.7 4.3-2.1 1.5a12 12 0 0 0 6.1 6.1l1.5-2.1L20 15.5V19a1.5 1.5 0 0 1-1.6 1.5C10.6 20 4 13.4 3.5 5.6A1.5 1.5 0 0 1 5 4Z"/></svg>941 55 01 87</a>
+      </div>
+      <p class="contacto__mail">O por correo: <a href="mailto:reservas@lumbreylaurel.example">reservas@lumbreylaurel.example</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="ancho pie__in">
+    <div><a class="marca" href="#inicio"><span>Lumbre y Laurel</span></a><p style="margin-top:.75rem">Restaurante en Logroño</p></div>
+    <p>Calle San Juan, 14<br>26001 Logroño<br><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Calle%20San%20Juan%2014%2C%2026001%20Logro%C3%B1o" target="_blank" rel="noopener">Cómo llegar<span class="oculto"> (se abre en una pestaña nueva)</span></a></p>
+    <p><a href="tel:+34941550187">941 55 01 87</a><br><a href="mailto:reservas@lumbreylaurel.example">reservas@lumbreylaurel.example</a><br><a href="#horario">Horario</a></p>
+    <div class="pie__legal"><p>© Lumbre y Laurel. Propuesta de diseño; no es la web oficial del negocio.</p><p>Datos pendientes de confirmar con el negocio: servicios.</p></div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/34644550187?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20Lumbre%20y%20Laurel." target="_blank" rel="noopener"><svg class="ico" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20l1.2-4.1A8.3 8.3 0 1 1 8.3 19L4 20Z"/><path d="M9.2 8.3c-.5 3 2.6 6.4 5.9 6.6l1-1.4-1.8-1-.8.7c-1-.4-1.9-1.300-2.300-2.300l.7-.8-1-1.800Z"/></svg>Reservar<span class="oculto"> por WhatsApp (se abre en una pestaña nueva)</span></a>
+
+<script>
+(function(){
+var d=document,H=[{"d":[1,2,3],"t":[[810,960]]},{"d":[4,5],"t":[[810,960],[1230,1410]]},{"d":[6],"t":[[810,990]]},{"d":[0],"t":[]}],TZ="Europe/Madrid";
+var b=d.querySelector('.menu-btn'),n=d.getElementById('nav');
+function menu(o){b.setAttribute('aria-expanded',String(o));n.classList.toggle('abierto',o)}
+if(b&&n){
+  b.addEventListener('click',function(){menu(b.getAttribute('aria-expanded')!=='true')});
+  n.addEventListener('click',function(e){if(e.target.closest('a'))menu(false)});
+  d.addEventListener('keydown',function(e){if(e.key==='Escape'&&b.getAttribute('aria-expanded')==='true'){menu(false);b.focus()}});
+}
+var N=['lunes','martes','miércoles','jueves','viernes','sábado','domingo'],S=[[],[],[],[],[],[],[]],ok=false;
+H.forEach(function(r){if(!r)return;ok=true;r.d.forEach(function(x){r.t.forEach(function(t){S[x].push(t)})})});
+S.forEach(function(l){l.sort(function(a,c){return a[0]-c[0]})});
+function ahora(){
+  try{
+    var p={};
+    new Intl.DateTimeFormat('en-GB',{timeZone:TZ,weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).forEach(function(x){p[x.type]=x.value});
+    var i=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].indexOf(p.weekday);
+    if(i<0)throw 0;
+    return{d:i,m:(+p.hour%24)*60+ +p.minute};
+  }catch(e){var t=new Date();return{d:(t.getDay()+6)%7,m:t.getHours()*60+t.getMinutes()}}
+}
+function hm(m){m%=1440;var x=m%60;return Math.floor(m/60)+':'+(x<10?'0':'')+x}
+function alas(m){return(Math.floor(m%1440/60)===1?'a la ':'a las ')+hm(m)}
+function pinta(){
+  var a=ahora(),cierra=null,txt='',k,i,dia;
+  S[a.d].forEach(function(t){if(a.m>=t[0]&&a.m<t[1])cierra=t});
+  S[(a.d+6)%7].forEach(function(t){if(t[1]>1440&&a.m<t[1]-1440)cierra=t});
+  if(cierra)txt=cierra[0]===0&&cierra[1]===1440?'todo el día':'cierra '+alas(cierra[1]);
+  else for(k=0;k<8&&!txt;k++){
+    dia=S[(a.d+k)%7];
+    for(i=0;i<dia.length;i++)if(k>0||dia[i][0]>a.m){txt='abre '+(k===0?'hoy':k===1?'mañana':'el '+N[(a.d+k)%7])+' '+alas(dia[i][0]);break}
+  }
+  d.querySelectorAll('[data-estado]').forEach(function(el){
+    el.hidden=false;el.classList.toggle('abierto',!!cierra);
+    el.firstChild.textContent=cierra?'Abierto ahora':'Cerrado ahora';
+    el.lastChild.textContent=txt?' · '+txt:'';
+  });
+  d.querySelectorAll('[data-fila]').forEach(function(tr,j){tr.classList.toggle('hoy',!!H[j]&&H[j].d.indexOf(a.d)>=0)});
+  var h=d.querySelector('[data-hoy]');
+  if(h)h.textContent=S[a.d].length?S[a.d].map(function(t){return hm(t[0])+'–'+hm(t[1])}).join(' y '):'Cerrado';
+}
+if(ok){pinta();setInterval(pinta,60000)}
+})();
+</script>
+</body>
+</html>
