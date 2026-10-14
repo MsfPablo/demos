@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Porfolio · Webs para negocios locales</title>
+<meta name="description" content="Ocho webs de muestra de una sola página para negocios locales: rápidas, pensadas para el móvil y listas en pocos días.">
+<style>
+:root{--fondo:#f6f4ef;--tinta:#1d2430;--suave:#5b6472;--linea:#e2ddd3;--tarjeta:#fff;--acento:#b5462f}
+@media (prefers-color-scheme:dark){:root{--fondo:#14171c;--tinta:#eef0f3;--suave:#a3abb8;--linea:#2a2f38;--tarjeta:#1c2027;--acento:#e88a6f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+main{max-width:1120px;margin:0 auto;padding:56px 16px 72px}
+.ceja{color:var(--acento);font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin:0}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.05;letter-spacing:-.02em;margin:.3em 0 .4em;max-width:16ch}
+.intro{color:var(--suave);max-width:58ch;margin:0}
+.claves{display:flex;flex-wrap:wrap;gap:8px 20px;margin:24px 0 0;padding:0;list-style:none;color:var(--suave);font-size:15px}
+.claves li::before{content:"✓ ";color:var(--acento);font-weight:700}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px;margin-top:48px}
+a.demo{display:block;background:var(--tarjeta);border:1px solid var(--linea);border-radius:16px;overflow:hidden;color:inherit;text-decoration:none;transition:transform .15s,box-shadow .15s}
+a.demo:hover,a.demo:focus-visible{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.12)}
+a.demo:focus-visible{outline:3px solid var(--acento);outline-offset:2px}
+.marco{aspect-ratio:390/520;overflow:hidden;border-bottom:1px solid var(--linea)}
+.marco img{width:100%;display:block}
+.pie{padding:14px 16px 16px}
+.pie strong{display:block;font-size:17px}
+.pie span{color:var(--suave);font-size:14px}
+footer{margin-top:56px;color:var(--suave);font-size:14px;border-top:1px solid var(--linea);padding-top:20px}
+@media (prefers-reduced-motion:reduce){a.demo{transition:none}a.demo:hover{transform:none}}
+</style>
+</head>
+<body>
+<main>
+<p class="ceja">Porfolio</p>
+<h1>Webs de una página para negocios locales</h1>
+<p class="intro">Ocho diseños de muestra, uno por sector. Cada web se hace a medida con los datos reales del negocio: servicios y precios, horario con «abierto ahora», cómo llegar y botón para escribir o llamar.</p>
+<ul class="claves">
+<li>Pensadas primero para el móvil</li>
+<li>Carga rápida, sin plantillas pesadas</li>
+<li>Lista en pocos días</li>
+<li>Accesible y con buen posicionamiento local</li>
+</ul>
+<section class="rejilla" aria-label="Webs de muestra">
+<a class="demo" href="../muestra-restaurante/"><div class="marco"><img src="img/restaurante.jpg" alt="Captura en móvil de la web del restaurante Lumbre y Laurel" loading="lazy"></div><div class="pie"><strong>Lumbre y Laurel</strong><span>Restaurante · carta con precios</span></div></a>
+<a class="demo" href="../muestra-bar/"><div class="marco"><img src="img/bar.jpg" alt="Captura en móvil de la web del Bar El Farol" loading="lazy"></div><div class="pie"><strong>Bar El Farol</strong><span>Bar · pinchos y partidos</span></div></a>
+<a class="demo" href="../muestra-peluqueria/"><div class="marco"><img src="img/peluqueria.jpg" alt="Captura en móvil de la web de la peluquería Maraña" loading="lazy"></div><div class="pie"><strong>Maraña</strong><span>Peluquería · servicios y cita</span></div></a>
+<a class="demo" href="../muestra-estetica/"><div class="marco"><img src="img/estetica.jpg" alt="Captura en móvil de la web del centro de estética Alba Piel" loading="lazy"></div><div class="pie"><strong>Alba Piel</strong><span>Estética · tratamientos</span></div></a>
+<a class="demo" href="../muestra-clinica/"><div class="marco"><img src="img/clinica.jpg" alt="Captura en móvil de la web de la Clínica Dental Ribera" loading="lazy"></div><div class="pie"><strong>Clínica Dental Ribera</strong><span>Clínica dental</span></div></a>
+<a class="demo" href="../muestra-fisio/"><div class="marco"><img src="img/fisio.jpg" alt="Captura en móvil de la web de Tándem Fisioterapia" loading="lazy"></div><div class="pie"><strong>Tándem Fisioterapia</strong><span>Fisioterapia</span></div></a>
+<a class="demo" href="../muestra-academia/"><div class="marco"><img src="img/academia.jpg" alt="Captura en móvil de la web de la Academia Bitácora" loading="lazy"></div><div class="pie"><strong>Academia Bitácora</strong><span>Academia · clases de refuerzo</span></div></a>
+<a class="demo" href="../muestra-tienda/"><div class="marco"><img src="img/tienda.jpg" alt="Captura en móvil de la web de la Librería Hojaldre" loading="lazy"></div><div class="pie"><strong>Librería Hojaldre</strong><span>Tienda de barrio</span></div></a>
+</section>
+<footer>Los negocios de estas muestras son ficticios: sirven para enseñar el diseño. Los datos de contacto se han quitado a propósito.</footer>
+</main>
+</body>
+</html>
