@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lumbre y Laurel, casa de comidas a la brasa en Logroño</title>
+<meta name="description" content="Casa de comidas en el casco antiguo de Logroño: brasa de sarmiento, verdura de la ribera del Ebro, pescado de lonja, carne riojana y vinos de pequeños productores.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#211C1B">
+<meta name="color-scheme" content="light">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Lumbre y Laurel">
+<meta property="og:title" content="Lumbre y Laurel: brasa lenta y huerta de aquí">
+<meta property="og:description" content="Casa de comidas a la brasa de sarmiento en la calle San Juan de Logroño.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%234E1824'/%3E%3Cpath d='M0 0L64 64M64 0L0 64M32 0L64 32 32 64 0 32z' stroke='%23B7924A' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Lumbre y Laurel","description":"Casa de comidas en el casco antiguo de Logroño. Cocinamos a la brasa de sarmiento verdura de la ribera del Ebro, pescado de lonja y carne riojana. Carta corta, vinos de pequeños productores y sobremesa sin reloj.","servesCuisine":["Riojana","Brasa"],"hasMenu":"#carta","address":{"@type":"PostalAddress","streetAddress":"Calle San Juan, 14","addressLocality":"Logroño","postalCode":"26001","addressCountry":"ES"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday"],"opens":"13:30","closes":"16:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"13:30","closes":"16:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"20:30","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"13:30","closes":"16:30"}]}</script>
+<style>
+/* Hallmark · macrostructure: bespoke «etiqueta en la malla» · tone: editorial-bodega · anchor hue: granate 10°
+ * theme: custom bespoke · paper ceniza #DCD8CF · accent brasa #E2672E (solo botón principal)
+ * fonts: Bodoni Moda (display) + Schibsted Grotesk (texto) · axes: light / high-contrast-serif / warm
+ * Hallmark · pre-emit critique: P5 H4 E4 S5 R5 V5 · nav: secciones a la izquierda + Reservas · footer: cuello con malla · contrast: pass (40–41)
+ */
+@font-face{font-family:"Bodoni Moda";src:url(fuentes/bodoni-moda.woff2) format("woff2");font-weight:400 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Schibsted Grotesk";src:url(fuentes/schibsted-grotesk.woff2) format("woff2");font-weight:400 900;font-style:normal;font-display:swap}
+:root{
+  --granate:#4E1824;--granate-hondo:#3C111B;--ceniza:#DCD8CF;--papel:#EEEBE4;--carbon:#211C1B;--carbon-suave:#4A4240;
+  --alambre:#B7924A;--alambre-claro:#D9B56E;--brasa:#E2672E;--sobre-granate:#E6DCD6;--sobre-granate-suave:#C9B9B6;--abierto:#7FC08D;--cerrado:#E58B7A;
+  --f-titulo:"Bodoni Moda",Didot,"Bodoni 72",Georgia,serif;
+  --f-texto:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease-out:cubic-bezier(.22,.8,.24,1);
+  --s1:.25rem;--s2:.5rem;--s3:.75rem;--s4:1rem;--s5:1.5rem;--s6:2rem;--s7:3rem;--s8:4.5rem;--s9:clamp(4rem,9vw,7.5rem);
+  --foco:var(--carbon);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;scroll-padding-top:1rem;overflow-x:clip}
+body{margin:0;background:var(--ceniza);color:var(--carbon);font:400 1.0625rem/1.6 var(--f-texto);overflow-x:clip;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+svg{display:block}
+p,h1,h2,h3,ul,ol,dl,dd,figure{margin:0;padding:0}
+ul{list-style:none}
+h1,h2,h3{font-family:var(--f-titulo);font-weight:500;font-style:normal;line-height:1.02;text-wrap:balance;min-width:0;overflow-wrap:anywhere}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
+a,button{touch-action:manipulation}
+:focus-visible{outline:3px solid var(--foco);outline-offset:3px}
+.oscuro{--foco:var(--papel)}
+.ancho{width:min(100% - 2rem,72rem);margin-inline:auto}
+.salto{position:absolute;left:1rem;top:-5rem;z-index:50;background:var(--papel);color:var(--carbon);padding:.7rem 1rem}
+.salto:focus{top:1rem}
+.nb{white-space:nowrap}
+
+/* Franja de propuesta */
+.demo{background:var(--carbon);color:var(--papel);font-size:.8125rem;line-height:1.4;text-align:center;text-wrap:balance;padding:.55rem 1rem}
+
+/* Cabecera, sobre el granate */
+.cab{background:var(--granate);color:var(--sobre-granate)}
+.cab__in{display:flex;align-items:center;justify-content:space-between;gap:var(--s4);min-height:3.5rem}
+.cab__reservar{display:inline-flex;align-items:center;min-height:2.75rem;font-weight:600;font-size:.95rem;color:var(--alambre-claro);text-decoration:none;white-space:nowrap}
+.cab nav ul{display:flex;gap:var(--s5)}
+.cab nav a{display:inline-block;padding:.75rem 0;text-decoration:none;font-size:.95rem;font-weight:500;white-space:nowrap}
+.cab nav .solo-ancho{display:none}
+@media (min-width:48rem){.cab nav .solo-ancho{display:list-item}.cab nav ul{gap:var(--s6)}}
+
+/* Portada: la botella */
+.portada{background:var(--granate);color:var(--sobre-granate);padding-bottom:var(--s7)}
+.botella{position:relative;isolation:isolate;padding:clamp(2rem,4vw,3.25rem) clamp(1.75rem,6vw,4rem);overflow:clip}
+.mallas{position:absolute;inset:0;z-index:-1;pointer-events:none;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 88%,transparent)}
+.malla{position:absolute;inset:-12%;width:124%;height:124%}
+.etiqueta{
+  --r:.75rem;position:relative;width:min(100%,36rem);margin-inline:auto;background:var(--papel);color:var(--granate);
+  text-align:center;padding:clamp(1.75rem,4vw,2.75rem) clamp(1.25rem,4vw,3rem) clamp(1.5rem,3.5vw,2.25rem);
+  -webkit-mask:radial-gradient(circle at 0 0,#0000 var(--r),#000 calc(var(--r) + .5px)) 0 0/51% 51% no-repeat,radial-gradient(circle at 100% 0,#0000 var(--r),#000 calc(var(--r) + .5px)) 100% 0/51% 51% no-repeat,radial-gradient(circle at 0 100%,#0000 var(--r),#000 calc(var(--r) + .5px)) 0 100%/51% 51% no-repeat,radial-gradient(circle at 100% 100%,#0000 var(--r),#000 calc(var(--r) + .5px)) 100% 100%/51% 51% no-repeat;
+  mask:radial-gradient(circle at 0 0,#0000 var(--r),#000 calc(var(--r) + .5px)) 0 0/51% 51% no-repeat,radial-gradient(circle at 100% 0,#0000 var(--r),#000 calc(var(--r) + .5px)) 100% 0/51% 51% no-repeat,radial-gradient(circle at 0 100%,#0000 var(--r),#000 calc(var(--r) + .5px)) 0 100%/51% 51% no-repeat,radial-gradient(circle at 100% 100%,#0000 var(--r),#000 calc(var(--r) + .5px)) 100% 100%/51% 51% no-repeat;
+}
+.etiqueta::before,.etiqueta::after{content:"";position:absolute;pointer-events:none;border:1px solid var(--alambre)}
+.etiqueta::before{inset:.85rem}
+.etiqueta::after{inset:1.1rem;border-width:.5px}
+.etiqueta__casa{font:600 .78rem/1.3 var(--f-texto);letter-spacing:.24em;text-transform:uppercase;color:var(--granate)}
+.etiqueta h1{font-size:clamp(2.7rem,1.6rem + 4.4vw,4.6rem);font-weight:500;letter-spacing:-.01em;margin-top:var(--s4);line-height:.95}
+.etiqueta h1 .y{display:block;font-size:.42em;font-weight:400;margin-block:.2em .1em;line-height:1}
+.filete{display:flex;align-items:center;gap:var(--s3);width:min(100%,16rem);margin:var(--s5) auto;color:var(--alambre)}
+.filete::before,.filete::after{content:"";flex:1;height:1px;background:currentColor}
+.filete svg{flex:none}
+.etiqueta__lema{font:400 clamp(1.25rem,1rem + 1vw,1.6rem)/1.25 var(--f-titulo);text-wrap:balance}
+.etiqueta__origen{margin-top:var(--s5);font-size:.875rem;color:var(--carbon-suave)}
+
+.acciones{display:flex;flex-direction:column;align-items:flex-start;gap:var(--s4);width:min(100% - 3.5rem,36rem);margin:var(--s5) auto 0}
+.acciones__botones{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s3) var(--s5)}
+@media (min-width:40rem){.acciones{flex-direction:row;justify-content:space-between;align-items:center}.acciones__botones{flex:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:3.25rem;padding:.8rem 1.75rem;border:0;font:600 1.0625rem/1.2 var(--f-texto);text-decoration:none;white-space:nowrap;cursor:pointer;user-select:none;-webkit-user-select:none;transition:transform .12s var(--ease-out),background-color .15s}
+.btn:active{transform:scale(.97)}
+.btn--brasa{background:var(--brasa);color:var(--carbon)}
+.enlace{display:inline-flex;align-items:center;min-height:2.75rem;font-weight:500;text-decoration:underline;text-decoration-color:var(--alambre);text-decoration-thickness:2px}
+@media (hover:hover) and (pointer:fine){
+  .btn--brasa:hover{background:#EC7A43}
+  .enlace:hover{text-decoration-color:currentColor}
+  .cab a:hover,.pie a:hover{text-decoration:underline}
+}
+.estado{display:inline-flex;align-items:center;flex-wrap:wrap;gap:.15rem .5rem;font-size:.98rem;color:var(--sobre-granate-suave)}
+.estado[hidden]{display:none}
+.estado::before{content:"";width:.55rem;height:.55rem;border-radius:50%;background:var(--cerrado);flex:none}
+.estado.abierto::before{background:var(--abierto)}
+.estado b{color:var(--sobre-granate);font-weight:600}
+
+/* Malla: el momento firma */
+@media (prefers-reduced-motion:no-preference){
+  .malla--a{animation:malla-a 1.2s var(--ease-out) .1s both}
+  .malla--b{animation:malla-b 1.2s var(--ease-out) .1s both}
+  .malla--nudos{animation:nudos .5s var(--ease-out) 1.1s both}
+}
+@keyframes malla-a{from{transform:translate3d(-8%,-5%,0);opacity:0}}
+@keyframes malla-b{from{transform:translate3d(8%,-5%,0);opacity:0}}
+@keyframes nudos{from{opacity:0}}
+
+/* Secciones */
+.sec{padding-block:var(--s9)}
+.sec h2{font-size:clamp(2.1rem,1.5rem + 2.6vw,3.3rem);color:var(--granate)}
+.entrada{margin-top:var(--s4);max-width:34rem;color:var(--carbon-suave);font-size:1.125rem}
+
+/* Carta: la contraetiqueta */
+.carta__in{display:grid;gap:var(--s7)}
+@media (min-width:60rem){
+  .carta__in{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--s8)}
+  .carta__cab{position:sticky;top:var(--s6);align-self:start}
+}
+.menu-dia{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid var(--granate);max-width:24rem}
+.menu-dia b{display:block;font:500 1.6rem/1.1 var(--f-titulo);color:var(--granate);margin-bottom:var(--s2)}
+.contra{background:var(--papel);padding:clamp(1.5rem,4vw,3rem);position:relative}
+.contra::before{content:"";position:absolute;inset:.5rem;border:1px solid var(--alambre);pointer-events:none}
+.grupo+.grupo{margin-top:var(--s7)}
+.grupo h3{font-size:1.5rem;color:var(--granate);padding-bottom:var(--s3);border-bottom:1px solid var(--granate)}
+.plato{padding-block:var(--s4);border-bottom:1px solid rgb(33 28 27/.14)}
+.plato:last-child{border-bottom:0;padding-bottom:0}
+.plato__linea{display:flex;align-items:baseline;gap:var(--s2)}
+.plato__nombre{font-weight:600;font-size:1.0625rem}
+.plato__linea::after{content:"";order:1;flex:1;min-width:1.5rem;border-bottom:1.5px dotted rgb(33 28 27/.45);transform:translateY(-.3em)}
+.plato__precio{order:2;font-variant-numeric:tabular-nums lining-nums;font-weight:600;white-space:nowrap}
+.plato p{margin-top:var(--s1);color:var(--carbon-suave);font-size:.98rem;max-width:32rem}
+
+/* La casa */
+.casa{background:var(--papel)}
+.casa__in{display:grid;gap:var(--s7)}
+.casa__frase{font:500 clamp(1.9rem,1.3rem + 2.6vw,3.1rem)/1.08 var(--f-titulo);color:var(--granate);max-width:16em;text-wrap:balance}
+.casa__textos{display:grid;gap:var(--s6)}
+.casa__textos p{max-width:36rem}
+.casa__textos b{font-weight:700;color:var(--granate)}
+@media (min-width:60rem){
+  .casa__in{grid-template-columns:minmax(0,6fr) minmax(0,5fr);align-items:start;gap:var(--s8)}
+}
+
+/* Horario, dónde y reservas */
+.visita__in{display:grid;gap:var(--s8)}
+@media (min-width:60rem){.visita__in{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.hoy-linea{margin-top:var(--s4);font-size:1.0625rem}
+.hoy-linea b{font-weight:600}
+.horas{width:100%;margin-top:var(--s5);border-collapse:collapse;font-size:1.0625rem}
+.horas th,.horas td{text-align:left;vertical-align:top;padding:.85rem 0;border-bottom:1px solid rgb(33 28 27/.18)}
+.horas th{font-weight:500;padding-right:var(--s4)}
+.horas td{text-align:right}
+.horas .etq{display:none;margin-left:.5rem;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--papel);background:var(--granate);padding:.15rem .4rem;vertical-align:.15em}
+.horas tr.hoy th,.horas tr.hoy td{font-weight:700;color:var(--granate)}
+.horas tr.hoy .etq{display:inline-block}
+.direccion{margin-top:var(--s5);font-style:normal;font-size:1.125rem;line-height:1.5}
+.reservas{margin-top:var(--s7);padding-top:var(--s6);border-top:1px solid var(--granate)}
+.reservas h3{font-size:1.75rem;color:var(--granate)}
+.reservas p{margin-top:var(--s3);max-width:30rem;color:var(--carbon-suave)}
+.reservas .enlace{margin-top:var(--s3)}
+
+/* Pie: el cuello de la botella */
+.pie{background:var(--granate-hondo);color:var(--sobre-granate-suave);font-size:.9rem;padding-block:0 var(--s7)}
+.pie__malla{height:3.5rem;opacity:.75}
+.pie__malla svg{width:100%;height:100%}
+.pie__in{display:grid;gap:var(--s5);padding-top:var(--s6)}
+.pie__nombre{font:500 1.75rem/1 var(--f-titulo);color:var(--sobre-granate)}
+.pie a{text-decoration:none}
+
+/* Barra fija en el móvil */
+.barra{position:fixed;inset:auto 0 0;z-index:40;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:var(--carbon);color:var(--papel);padding-bottom:env(safe-area-inset-bottom,0px);border-top:1px solid rgb(238 235 228/.12)}
+.barra a{display:grid;place-items:center;gap:.15rem;min-height:3.6rem;padding:.4rem .25rem;text-decoration:none;font-size:.85rem;font-weight:600;user-select:none;-webkit-user-select:none}
+.barra a+a{border-left:1px solid rgb(238 235 228/.12)}
+.barra svg{width:1.25rem;height:1.25rem;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.barra a:active{background:rgb(238 235 228/.08)}
+body{padding-bottom:calc(3.6rem + env(safe-area-inset-bottom,0px))}
+@media (min-width:60rem){.barra{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<a class="salto" href="#carta">Saltar a la carta</a>
+<p class="demo" role="note">Propuesta de diseño para Lumbre y Laurel, un restaurante ficticio. No es su web oficial.</p>
+
+<header class="cab oscuro">
+  <div class="ancho cab__in">
+    <nav aria-label="Secciones">
+      <ul>
+        <li><a href="#carta">La carta</a></li>
+        <li class="solo-ancho"><a href="#casa">La casa</a></li>
+        <li><a href="#horario">Horario</a></li>
+        <li class="solo-ancho"><a href="#donde">Dónde estamos</a></li>
+      </ul>
+    </nav>
+    <a class="cab__reservar" href="#contacto">Reservas</a>
+  </div>
+</header>
+
+<main>
+<section class="portada oscuro" aria-labelledby="titulo">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+    <defs>
+      <pattern id="hilo-a" width="26" height="40" patternUnits="userSpaceOnUse"><path d="M-13 -20L39 60" stroke="#B7924A" stroke-width="1.3"/></pattern>
+      <pattern id="hilo-b" width="26" height="40" patternUnits="userSpaceOnUse"><path d="M39 -20L-13 60" stroke="#B7924A" stroke-width="1.3"/></pattern>
+      <pattern id="nudo" width="26" height="40" patternUnits="userSpaceOnUse"><circle cx="0" cy="0" r="2.4" fill="#C9A35A"/><circle cx="26" cy="0" r="2.4" fill="#C9A35A"/><circle cx="0" cy="40" r="2.4" fill="#C9A35A"/><circle cx="26" cy="40" r="2.4" fill="#C9A35A"/><circle cx="13" cy="20" r="2.4" fill="#C9A35A"/></pattern>
+    </defs>
+  </svg>
+  <div class="botella">
+    <div class="mallas" aria-hidden="true">
+      <svg class="malla malla--a" focusable="false"><rect width="100%" height="100%" fill="url(#hilo-a)"/></svg>
+      <svg class="malla malla--b" focusable="false"><rect width="100%" height="100%" fill="url(#hilo-b)"/></svg>
+      <svg class="malla malla--nudos" focusable="false"><rect width="100%" height="100%" fill="url(#nudo)"/></svg>
+    </div>
+    <div class="etiqueta">
+      <p class="etiqueta__casa">Casa de comidas</p>
+      <h1 id="titulo">Lumbre <span class="y">y</span> Laurel</h1>
+      <div class="filete" aria-hidden="true"><svg width="22" height="14" viewBox="0 0 22 14"><path d="M1 7C6 1 16 1 21 7C16 13 6 13 1 7Z M11 2V12" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></div>
+      <p class="etiqueta__lema">Brasa lenta y huerta de aquí.</p>
+      <p class="etiqueta__origen">Calle San Juan, 14. Logroño</p>
+    </div>
+  </div>
+  <div class="ancho acciones">
+    <p class="estado" data-estado hidden><b>Cerrado ahora</b><span></span></p>
+    <div class="acciones__botones">
+      <a class="btn btn--brasa" href="#contacto">Reservar mesa</a>
+      <a class="enlace" href="#carta">Ver la carta</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec carta" id="carta" aria-labelledby="carta-t">
+  <div class="ancho carta__in">
+    <div class="carta__cab">
+      <h2 id="carta-t">La carta</h2>
+      <p class="entrada">Corta a propósito: lo que pasa por la brasa ese día y poco más. Cambia con la temporada.</p>
+      <p class="menu-dia"><b>Menú del día, 19 €</b>De martes a viernes al mediodía, con pan, bebida y postre.</p>
+    </div>
+    <div class="contra">
+      <div class="grupo">
+        <h3>Para empezar</h3>
+        <ul>
+          <li class="plato"><div class="plato__linea"><span class="plato__nombre">Pimientos del cristal a la brasa</span><span class="plato__precio">12 €</span></div><p>Asados enteros, pelados a mano y aliñados con ajo y aceite de arbequina.</p></li>
+          <li class="plato"><div class="plato__linea"><span class="plato__nombre">Alcachofas confitadas</span><span class="plato__precio">14 €</span></div><p>Con yema curada y virutas de jamón. Solo en temporada.</p></li>
+          <li class="plato"><div class="plato__linea"><span class="plato__nombre">Croquetas de chuleta</span><span class="plato__precio">11 €</span></div><p>Seis unidades, con la carne de la brasa del día anterior.</p></li>
+        </ul>
+      </div>
+      <div class="grupo">
+        <h3>De la brasa</h3>
+        <ul>
+          <li class="plato"><div class="plato__linea"><span class="plato__nombre">Chuletillas al sarmiento</span><span class="plato__precio">22 €</span></div><p>Cordero lechal, sal gorda y nada más. Con patatas a lo pobre.</p></li>
+          <li class="plato"><div class="plato__linea"><span class="plato__nombre">Merluza de pincho</span><span class="plato__precio">24 €</span></div><p>Lomo a la brasa con pilpil ligero y pimiento choricero.</p></li>
+          <li class="plato"><div class="plato__linea"><span class="plato__nombre">Chuletón de vaca vieja</span><span class="plato__precio">62 €/kg</span></div><p>Madurado 45 días. Para compartir entre dos o tres.</p></li>
+        </ul>
+      </div>
+      <div class="grupo">
+        <h3>Para terminar</h3>
+        <ul>
+          <li class="plato"><div class="plato__linea"><span class="plato__nombre">Torrija caramelizada</span><span class="plato__precio">7 €</span></div><p>Con helado de leche merengada.</p></li>
+          <li class="plato"><div class="plato__linea"><span class="plato__nombre">Queso camerano</span><span class="plato__precio">8 €</span></div><p>De cabra, con membrillo casero y nueces.</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec casa" id="casa" aria-labelledby="casa-t">
+  <div class="ancho casa__in">
+    <h2 id="casa-t" class="casa__frase">La misma viña que llena la copa enciende la brasa.</h2>
+    <div class="casa__textos">
+      <p><b>Brasa de sarmiento.</b> Encendemos cada servicio con sarmiento de viña. Da un humo dulce que no se consigue con carbón.</p>
+      <p><b>Producto con nombre.</b> Sabemos de qué huerta viene la verdura y de qué barco el pescado, y te lo contamos en la mesa.</p>
+      <p><b>Vinos fuera de ruta.</b> Más de cuarenta referencias de bodegas pequeñas de Rioja, muchas de ellas por copas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec visita" id="horario" aria-labelledby="horario-t">
+  <div class="ancho visita__in">
+    <div>
+      <h2 id="horario-t">Horario</h2>
+      <p class="hoy-linea">Hoy: <b data-hoy>consulta la tabla</b></p>
+      <table class="horas">
+        <caption class="salto-c" style="position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden">Horario de apertura por días</caption>
+        <tbody>
+          <tr data-fila><th scope="row">Martes a jueves<span class="etq">Hoy</span></th><td><span class="nb">13:30–16:00</span></td></tr>
+          <tr data-fila><th scope="row">Viernes y sábados<span class="etq">Hoy</span></th><td><span class="nb">13:30–16:00</span> y <span class="nb">20:30–23:30</span></td></tr>
+          <tr data-fila><th scope="row">Domingos<span class="etq">Hoy</span></th><td><span class="nb">13:30–16:30</span></td></tr>
+          <tr data-fila><th scope="row">Lunes<span class="etq">Hoy</span></th><td>Cerrado</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="donde">
+      <h2>Dónde estamos</h2>
+      <address class="direccion">Calle San Juan, 14<br>26001 Logroño</address>
+      <p class="entrada">En el casco antiguo, en la calle de los pinchos, a cinco minutos a pie del Espolón.</p>
+      <a class="enlace" href="https://www.google.com/maps/dir/?api=1&amp;destination=Calle%20San%20Juan%2014%2C%2026001%20Logro%C3%B1o">Cómo llegar en Google Maps</a>
+      <div class="reservas" id="contacto">
+        <h3>Reservas</h3>
+        <p>Se reserva por teléfono o por WhatsApp. Esta muestra no publica números: en la web del restaurante irían aquí y en la barra del móvil, a un toque.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie oscuro">
+  <div class="pie__malla" aria-hidden="true"><svg focusable="false"><rect width="100%" height="100%" fill="url(#hilo-a)"/><rect width="100%" height="100%" fill="url(#hilo-b)"/><rect width="100%" height="100%" fill="url(#nudo)"/></svg></div>
+  <div class="ancho pie__in">
+    <p class="pie__nombre">Lumbre y Laurel</p>
+    <p>Calle San Juan, 14. 26001 Logroño<br><a href="#horario">Horario</a> y <a href="#carta">carta</a></p>
+    <p>© Lumbre y Laurel. Propuesta de diseño con un negocio ficticio; no es la web oficial de ningún restaurante. Platos y precios de ejemplo, pendientes de confirmar.</p>
+  </div>
+</footer>
+
+<nav class="barra" aria-label="Acciones rápidas">
+  <a href="#contacto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Llamar</a>
+  <a class="wa" href="#contacto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 9.5c.3 2.3 2.2 4.3 4.5 4.8"/></svg>WhatsApp</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Calle%20San%20Juan%2014%2C%2026001%20Logro%C3%B1o"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Cómo llegar</a>
+</nav>
+
+<script>
+(function(){
+var d=document,H=[{"d":[1,2,3],"t":[[810,960]]},{"d":[4,5],"t":[[810,960],[1230,1410]]},{"d":[6],"t":[[810,990]]},{"d":[0],"t":[]}],TZ="Europe/Madrid";
+var N=['lunes','martes','miércoles','jueves','viernes','sábado','domingo'],S=[[],[],[],[],[],[],[]];
+H.forEach(function(r){r.d.forEach(function(x){r.t.forEach(function(t){S[x].push(t)})})});
+function ahora(){
+  try{
+    var p={};
+    new Intl.DateTimeFormat('en-GB',{timeZone:TZ,weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date()).forEach(function(x){p[x.type]=x.value});
+    var i=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].indexOf(p.weekday);
+    if(i<0)throw 0;
+    return{d:i,m:(+p.hour%24)*60+ +p.minute};
+  }catch(e){var t=new Date();return{d:(t.getDay()+6)%7,m:t.getHours()*60+t.getMinutes()}}
+}
+function hm(m){m%=1440;var x=m%60;return Math.floor(m/60)+':'+(x<10?'0':'')+x}
+function alas(m){return(Math.floor(m%1440/60)===1?'a la ':'a las ')+hm(m)}
+function pinta(){
+  var a=ahora(),cierra=null,txt='',k,i,dia;
+  S[a.d].forEach(function(t){if(a.m>=t[0]&&a.m<t[1])cierra=t});
+  S[(a.d+6)%7].forEach(function(t){if(t[1]>1440&&a.m<t[1]-1440)cierra=t});
+  if(cierra)txt='cierra '+alas(cierra[1]);
+  else for(k=0;k<8&&!txt;k++){
+    dia=S[(a.d+k)%7];
+    for(i=0;i<dia.length;i++)if(k>0||dia[i][0]>a.m){txt='abre '+(k===0?'hoy':k===1?'mañana':'el '+N[(a.d+k)%7])+' '+alas(dia[i][0]);break}
+  }
+  d.querySelectorAll('[data-estado]').forEach(function(el){
+    el.hidden=false;el.classList.toggle('abierto',!!cierra);
+    el.firstChild.textContent=cierra?'Abierto ahora':'Cerrado ahora';
+    el.lastChild.textContent=txt;
+  });
+  d.querySelectorAll('[data-fila]').forEach(function(tr,j){tr.classList.toggle('hoy',H[j].d.indexOf(a.d)>=0)});
+  var h=d.querySelector('[data-hoy]');
+  if(h)h.textContent=S[a.d].length?'de '+S[a.d].map(function(t){return hm(t[0])+' a '+hm(t[1])}).join(' y de '):'cerrado';
+}
+pinta();setInterval(pinta,60000);
+})();
+</script>
+</body>
+</html>
